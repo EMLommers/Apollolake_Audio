@@ -29,20 +29,20 @@ TODO: <br>
 
 output $ aplay -l<br>
  <br>
-&nbsp; **** List of PLAYBACK Hardware Devices ****<br>
-card 0: sofbxtda7219max [sof-bxtda7219max], device 0: Speakers (*) []<br>
+&nbsp; &#42;&#42;&#42;&#42; List of PLAYBACK Hardware Devices &#42;&#42;&#42;&#42;<br>
+card 0: sofbxtda7219max [sof-bxtda7219max], device 0: Speakers (&#42;) []<br>
 &nbsp;&nbsp;  Subdevices: 0/1<br>
 &nbsp;&nbsp;  Subdevice #0: subdevice #0<br>
-card 0: sofbxtda7219max [sof-bxtda7219max], device 1: Headset (*) []<br>
+card 0: sofbxtda7219max [sof-bxtda7219max], device 1: Headset (&#42;) []<br>
 &nbsp;&nbsp;  Subdevices: 1/1<br>
 &nbsp;&nbsp;  Subdevice #0: subdevice #0<br>
-card 0: sofbxtda7219max [sof-bxtda7219max], device 5: HDMI1 (*) []<br>
+card 0: sofbxtda7219max [sof-bxtda7219max], device 5: HDMI1 (&#42;) []<br>
 &nbsp;&nbsp;  Subdevices: 1/1<br>
 &nbsp;&nbsp;  Subdevice #0: subdevice #0<br>
-card 0: sofbxtda7219max [sof-bxtda7219max], device 6: HDMI2 (*) []<br>
+card 0: sofbxtda7219max [sof-bxtda7219max], device 6: HDMI2 (&#42;) []<br>
 &nbsp;&nbsp;  Subdevices: 1/1<br>
 &nbsp;&nbsp;  Subdevice #0: subdevice #0<br>
-card 0: sofbxtda7219max [sof-bxtda7219max], device 7: HDMI3 (*) []<br>
+card 0: sofbxtda7219max [sof-bxtda7219max], device 7: HDMI3 (&#42;) []<br>
 &nbsp;&nbsp;  Subdevices: 1/1<br>
 &nbsp;&nbsp;  Subdevice #0: subdevice #0<br>
 
