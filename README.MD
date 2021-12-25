@@ -24,6 +24,25 @@ Sound is via speakers<br>
 TODO: <br>
 -Alsa UCM ->  profile jack / speaker<br> 
 
+<br>
+ <br>
 
-
+output $ aplay -l<br>
+ <br>
+&nbsp; **** List of PLAYBACK Hardware Devices ****<br>
+card 0: sofbxtda7219max [sof-bxtda7219max], device 0: Speakers (*) []<br>
+&nbsp;&nbsp;  Subdevices: 0/1<br>
+&nbsp;&nbsp;  Subdevice #0: subdevice #0<br>
+card 0: sofbxtda7219max [sof-bxtda7219max], device 1: Headset (*) []<br>
+&nbsp;&nbsp;  Subdevices: 1/1<br>
+&nbsp;&nbsp;  Subdevice #0: subdevice #0<br>
+card 0: sofbxtda7219max [sof-bxtda7219max], device 5: HDMI1 (*) []<br>
+&nbsp;&nbsp;  Subdevices: 1/1<br>
+&nbsp;&nbsp;  Subdevice #0: subdevice #0<br>
+card 0: sofbxtda7219max [sof-bxtda7219max], device 6: HDMI2 (*) []<br>
+&nbsp;&nbsp;  Subdevices: 1/1<br>
+&nbsp;&nbsp;  Subdevice #0: subdevice #0<br>
+card 0: sofbxtda7219max [sof-bxtda7219max], device 7: HDMI3 (*) []<br>
+&nbsp;&nbsp;  Subdevices: 1/1<br>
+&nbsp;&nbsp;  Subdevice #0: subdevice #0<br>
 
