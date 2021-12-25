@@ -9,7 +9,7 @@ Developer mode + ctrl -d<br>
 sudo crossystem "dev_boot_usb"=1 "dev_boot_altfw"=1 "dev_boot_signed"=0<br>
 <br>
 Can be installed on internal with GBB FLAGS , FORCE_DEV_MODE, FORCE_DEV_ALTFW, SHORT_WAIT<Br>
- sudo /usr/share/vboot/bin/set_gbb_flags.sh 0xd <br>
+ sudo sh /usr/share/vboot/bin/set_gbb_flags.sh 0xd <br>
 reduce google screen start: sudo crossystem "loc_idx"=100 <br>
 <br>
 Linux kernel 5.13 Audio fix Apollo Lake Chromebooks <br>
