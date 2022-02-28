@@ -1,3 +1,15 @@
+<b><strong>Chromebook Coral rev5 (Apollolake / Broxton) Audio fix v3</strong></b><br>
+sudo cp /lib/firmware/intel/sof-tplg/sof-glk-da7219.tplg  /lib/firmware/intel/sof-tplg/sof-apl-da7219.tplg <br>
+sudo sed -i 's/ssp1/ssp5/g' /lib/firmware/intel/sof-tplg/sof-apl-da7219.tplg <br>
+sudo sed -i 's/SSP1/SSP5/g' /lib/firmware/intel/sof-tplg/sof-apl-da7219.tplg <br>
+sudo sed -i 's/ssp2/ssp1/g' /lib/firmware/intel/sof-tplg/sof-apl-da7219.tplg <br>
+sudo sed -i 's/SSP2/SSP1/g' /lib/firmware/intel/sof-tplg/sof-apl-da7219.tplg<br>
+reboot<br>
+
+
+
+
+
 <b><strong>Chromebook Coral rev5 (Apollolake / Broxton) Audio fix v2</strong></b><br>
 Copy only the new tplg file to /lib/firmware/intel/sof-tplg<br>
  Kernel parameter: snd_intel_dspcfg.dsp_driver=3<br>
