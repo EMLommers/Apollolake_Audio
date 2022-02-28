@@ -1,3 +1,15 @@
+<b><strong>Chromebook Coral rev5 (Apollolake / Broxton) Audio fix v2</strong><br>
+Copy only the new tplg file to /lib/firmware/intel/sof-tplg<br>
+ Kernel parameter: snd_intel_dspcfg.dsp_driver=3<br>
+ 
+<br>That's it<br>
+ <br>
+ Rest is obsolete<br>
+ 
+ 
+
+
+
 <b>Chromebook Coral rev5 (Apollolake / Broxton) Audio fix / TPM / Sleep & Resume</b><br>
 <br>
 
