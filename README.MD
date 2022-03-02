@@ -1,3 +1,10 @@
+<b><strong>Chromebook Coral rev5 (Apollolake / Broxton) Audio fix v4</strong></b><br>
+There is now an offical SOF topology file for the APL platform with da7219<br>
+extract the file: sof-apl-da7219.tplg.gz<br>
+Copy it to /lib/firmware/intel/sof-tplg/ <br>
+
+
+
 <b><strong>Chromebook Coral rev5 (Apollolake / Broxton) Audio fix v3</strong></b><br>
 sudo cp /lib/firmware/intel/sof-tplg/sof-glk-da7219.tplg  /lib/firmware/intel/sof-tplg/sof-apl-da7219.tplg <br>
 sudo sed -i 's/ssp1/ssp5/g' /lib/firmware/intel/sof-tplg/sof-apl-da7219.tplg <br>
