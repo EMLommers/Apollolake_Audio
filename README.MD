@@ -1,4 +1,4 @@
-<b>My Apollokale is Bricked, after changing firmware</b><br>
+<b>My Apollolake is Bricked, after changing firmware</b><br>
 I cannot check issues anymore, you are on your own.... for now<br>
 Good luck <br>
  
