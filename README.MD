@@ -1,3 +1,9 @@
+<b>My Apollokale is Bricked, after changing firmware</b><br>
+I cannot check issues anymore, you are on your own.... for now<br>
+Good luck <br>
+ 
+
+
 <b><strong>Chromebook Coral rev5 (Apollolake / Broxton) Audio fix v4</strong></b><br>
 There is now an offical SOF topology file for the APL platform with da7219, made by the SOF Team<br>
 extract the file: sof-apl-da7219.tplg.gz<br>
