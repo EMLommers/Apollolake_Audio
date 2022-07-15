@@ -6,9 +6,11 @@ Good luck <br>
 
 <b><strong>Chromebook Coral rev5 (Apollolake / Broxton) Audio fix v4</strong></b><br>
 There is now an offical SOF topology file for the APL platform with da7219, made by the SOF Team<br>
+delete original sof-apl-da7219.tplg
 extract the file: sof-apl-da7219.tplg.gz<br>
+make apollolake_audio2.sh executable
 Run the apollolake_audio2.sh<br>
-
+If audio problems still persist, manually copy the options from the sh file into /etc/modprobe.d/inteldsp.conf
 
 
 <b><strong>Chromebook Coral rev5 (Apollolake / Broxton) Audio fix v3</strong></b><br>
