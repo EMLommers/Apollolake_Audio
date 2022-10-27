@@ -1,6 +1,63 @@
-Was running RW legacy firmware and breath...<br>
+<strong>New appoach1, to get audio working without / with SOF / get DA7219 working:</strong><br>
+1. Extract Device-tree from kernel firmware or kernel ChromeOS, and or overlays. (dts,Dtb,dtbo)<br>
+2. Extract ACPI from chromeOS<br>
+3 build new kernel with (flat) Device-tree <br>
+4 make sure regulator reg_audio: is included.<br>
+5 build<br>
+<Br>
+
+<strong>New appoach2, to get audio working without / with SOF / get DA7219 working:</strong><br>
+1. Add to da7219.h :
+U32 vddio
+u32 vdd
+u32 vddmic
+
+2 add to acpi dlg,vddio and value 1800 , dlg,vdd value 1800 and dlg,vddmic  3300
+3 da719.c  read ACPI and write to according u32.
+
++     if (device_property_read_u32(dev, "dlg,vdd", &of_val32) >= 0)
++             pdata->vdd = of_val32;
++
+
++     if (device_property_read_u32(dev, "dlg,vddio", &of_val32) >= 0)
++             pdata->vddio = of_val32;
++
+
+
++     if (device_property_read_u32(dev, "dlg,vddmic", &of_val32) >= 0)
++             pdata->vddmic = of_val32;
++
+ ret = regulator_get_voltage(vddio);
++     /* If regulator_get_voltage() fails, try to use vddio from pdata. */
++     if (ret < 0 && da7219->pdata)
++            ret = da7219->pdata->vddio;
+   
+ ret = regulator_get_voltage(vdd);
++     /* If regulator_get_voltage() fails, try to use vdd from pdata. */
++     if (ret < 0 && da7219->pdata)
++            ret = da7219->pdata->vdd;
+
+
+  ret = regulator_get_voltage(vddmic);
+    /* If regulator_get_voltage() fails, try to use vddio from pdata. */
++     if (ret < 0 && da7219->pdata)
++            ret = da7219->pdata->vddmic;
+
++             dev_warn(component->dev, "Invalid VDDIO voltage: %d mV\n",
++                     ret);
 
  
+ 
++     /* Handle DT/ACPI/Platform data */
++     da7219->pdata = dev_get_platdata(component->dev);
+ +     if (!da7219->pdata)
+ +             da7219->pdata = da7219_fw_to_pdata(component);
+ +
+
+
+Or use Device tree and ACPI together..
+Works guaranteed!! 
+Thanks
 
 
 <b><strong>Chromebook Coral rev5 (Apollolake / Broxton) Audio fix v4</strong></b><br>
