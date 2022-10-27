@@ -3,7 +3,7 @@
 2. Extract ACPI from chromeOS<br>
 3 build new kernel with (flat) Device-tree <br>
 4 make sure regulator reg_audio: is included.<br>
-5 build<br>
+5 build kernel with dtb and if needed dtbo overlay<br>
 <Br>
 
 <strong>New appoach2, to get audio working without / with SOF / get DA7219 working:</strong><br>
