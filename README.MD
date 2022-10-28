@@ -1,3 +1,4 @@
+<strong> New approach still draft, use on your own responsibility <strong> <br>
 <strong>New appoach1, to get audio working without / with SOF / get DA7219 working:</strong><br>
 1. Extract Device-tree from kernel firmware / kernel ChromeOS, and or overlays. (dts,Dtb,dtbo)<br>
 2. Extract ACPI from chromeOS<br>
