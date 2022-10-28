@@ -14,10 +14,11 @@ u32 vddmic;<br>
 
 2 add to acpi dlg,vddio and value 1800 , dlg,vdd value 1800 and dlg,vddmic  3300
 3 da719.c  read ACPI and write to according u32.
+<Pre>
 
-+     if (device_property_read_u32(dev, "dlg,vdd", &of_val32) >= 0)
-+             pdata->vdd = of_val32;
-+
+\+     if (device_property_read_u32(dev, "dlg,vdd", &of_val32) >= 0)
+\+             pdata->vdd = of_val32;
+\+
 
 +     if (device_property_read_u32(dev, "dlg,vddio", &of_val32) >= 0)
 +             pdata->vddio = of_val32;
@@ -58,7 +59,7 @@ u32 vddmic;<br>
 Or use Device tree and ACPI together..
 Works guaranteed!! 
 Thanks
-
+</Pre>
 
 <b><strong>Chromebook Coral rev5 (Apollolake / Broxton) Audio fix v4</strong></b><br>
 There is now an offical SOF topology file for the APL platform with da7219, made by the SOF Team<br>
