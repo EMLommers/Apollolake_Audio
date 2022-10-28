@@ -60,6 +60,11 @@ Or use Device tree and ACPI together..
 Works guaranteed!! 
 Thanks
 </Pre>
+See kernel directory and copy to your distro and build, acpi for da7219 included. Still draft (not completely tested yet) <br>
+Maybe I gave you some ideas <br>
+<br>
+
+
 
 <b><strong>Chromebook Coral rev5 (Apollolake / Broxton) Audio fix v4</strong></b><br>
 There is now an offical SOF topology file for the APL platform with da7219, made by the SOF Team<br>
