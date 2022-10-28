@@ -12,8 +12,8 @@ u32 vddio;<br>
 u32 vdd;<br>
 u32 vddmic;<br>
 
-2 add to acpi dlg,vddio and value 1800 , dlg,vdd value 1800 and dlg,vddmic  3300
-3 da719.c  read ACPI and write to according u32.
+2. add to acpi dlg,vddio and value 1800 , dlg,vdd value 1800 and dlg,vddmic  3300
+3. sound/soc/codecs/da719.c  read ACPI and write to according u32.
 <Pre>
 
 \+     if (device_property_read_u32(dev, "dlg,vdd", &of_val32) >= 0)
