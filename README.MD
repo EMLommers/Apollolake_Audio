@@ -9,7 +9,7 @@
 <strong>New appoach2, to get audio working without / with SOF / get DA7219 working:</strong><br>
 <br>
  See files in directory: kernel<br>
- 
+ Modified based on kernel 5.15.0<br>
  <br>
  Obsolete:<br>
  
