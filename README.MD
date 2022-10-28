@@ -7,6 +7,13 @@
 <Br>
 
 <strong>New appoach2, to get audio working without / with SOF / get DA7219 working:</strong><br>
+<br>
+ See files in directory: kernel<br>
+ 
+ <br>
+ Obsolete:<br>
+ 
+ 
 1. Add to include/sound/da7219.h :<br>
 u32 vddio;<br>
 u32 vdd;<br>
